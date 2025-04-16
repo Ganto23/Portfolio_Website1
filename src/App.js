@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Header from './components/layout/Header';
 import Introduction from './components/layout/Introduction';

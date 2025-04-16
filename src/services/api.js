@@ -1,12 +1,18 @@
 import axios from 'axios';
 
-// Configure API URL from environment variables
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api/v1';
+// Configure API URL from environment variables or use the PythonAnywhere URL in production
+const API_URL = process.env.REACT_APP_API_URL || 
+                (process.env.NODE_ENV === 'production' 
+                  ? 'https://godfreyantomarlin.pythonanywhere.com/api/v1'
+                  : 'http://localhost:8000/api/v1');
 
 // Configure axios to include credentials and CSRF token
 axios.defaults.xsrfCookieName = 'csrftoken';
 axios.defaults.xsrfHeaderName = 'X-CSRFToken';
-axios.defaults.withCredentials = true;
+
+// Only include credentials for same-origin or localhost requests
+// This helps avoid CORS issues with credentials in cross-origin requests
+axios.defaults.withCredentials = API_URL.includes('localhost');
 
 // Check if we should use mock data (development mode or explicitly requested)
 const shouldUseMockData = 

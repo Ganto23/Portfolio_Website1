@@ -16,7 +16,7 @@ const mockData = {
       name: "AI Personal Assistant",
       description: "A voice-activated personal assistant built with Python and TensorFlow. This project uses natural language processing to understand and respond to user commands.",
       technologies: "Python, TensorFlow, NLP, Speech Recognition",
-      github_url: "https://github.com/Ganto23/ai-personal-assistant",
+      github_url: "https://github.com/Ganto23/Godfrey_Antomarlin",
       image: aiAssistantImage,
       order: 1
     },
@@ -25,7 +25,7 @@ const mockData = {
       name: "Web Scraper Tool",
       description: "An automated web scraper built with Node.js that extracts data from websites. Features include scheduling, data filtering, and export to multiple formats.",
       technologies: "JavaScript, Node.js, Express, MongoDB",
-      github_url: "https://github.com/Ganto23/web-scraper",
+      github_url: "https://github.com/Ganto23/Godfrey_Antomarlin",
       image: webScraperImage,
       order: 2
     },
@@ -34,7 +34,7 @@ const mockData = {
       name: "HackTheBurgh Winner",
       description: "An innovative project that won the HackTheBurgh hackathon. This application helps users track and reduce their carbon footprint through daily activities.",
       technologies: "React, Firebase, Material UI, Charts.js",
-      github_url: "https://github.com/Ganto23/carbon-tracker",
+      github_url: "https://github.com/Ganto23/Godfrey_Antomarlin",
       image: hacktheburghImage,
       order: 3
     },
@@ -43,7 +43,7 @@ const mockData = {
       name: "Spirit of Progress",
       description: "A collaborative project developed during a hackathon focused on sustainability. This platform connects eco-friendly initiatives with potential volunteers.",
       technologies: "React, Django, PostgreSQL, Docker",
-      github_url: "https://github.com/Ganto23/spirit-of-progress",
+      github_url: "https://github.com/Ganto23/Godfrey_Antomarlin",
       image: spiritOfProgressImage,
       order: 4
     }

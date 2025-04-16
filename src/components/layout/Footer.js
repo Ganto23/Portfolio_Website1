@@ -178,7 +178,7 @@ const Footer = () => {
           </FooterText>
           <SocialLinks aria-label="Social media links">
             <SocialLink 
-              href="https://github.com/Ganto23" 
+              href="https://github.com/Ganto23/" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="Visit my GitHub profile"
@@ -186,20 +186,12 @@ const Footer = () => {
               <i className="fab fa-github" aria-hidden="true"></i>
             </SocialLink>
             <SocialLink 
-              href="https://linkedin.com/in/godfrey-antomarlin" 
+              href="https://www.linkedin.com/in/abhijit-godfrey-antomarlin/" 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="Visit my LinkedIn profile"
             >
               <i className="fab fa-linkedin-in" aria-hidden="true"></i>
-            </SocialLink>
-            <SocialLink 
-              href="https://twitter.com/godfreyantomarlin" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="Visit my Twitter profile"
-            >
-              <i className="fab fa-twitter" aria-hidden="true"></i>
             </SocialLink>
           </SocialLinks>
         </FooterSection>
@@ -216,7 +208,7 @@ const Footer = () => {
               </FooterLinkItem>
               <FooterLinkItem>
                 <FooterLink 
-                  to="/#contact" 
+                  to="/" 
                   onClick={handleContactClick}
                 >
                   Contact

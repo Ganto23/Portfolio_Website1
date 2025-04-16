@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio_Website1/static/css/main.2b9b0b56.css",
+    "main.js": "/Portfolio_Website1/static/js/main.97123518.js",
+    "static/js/495.82cfc7dd.chunk.js": "/Portfolio_Website1/static/js/495.82cfc7dd.chunk.js",
+    "static/js/453.8ab44547.chunk.js": "/Portfolio_Website1/static/js/453.8ab44547.chunk.js",
+    "static/media/webScraper.jpg": "/Portfolio_Website1/static/media/webScraper.ed3177e5e65a84396c1a.jpg",
+    "static/media/hacktheburgh.jpg": "/Portfolio_Website1/static/media/hacktheburgh.f3511ac27fd86fe5e7fe.jpg",
+    "static/media/SpiritOfProgressHackathon.jpeg": "/Portfolio_Website1/static/media/SpiritOfProgressHackathon.78ddd90a311e255aa45c.jpeg",
+    "static/media/ai-personal-assistant.webp": "/Portfolio_Website1/static/media/ai-personal-assistant.ed39f13344c8736405d0.webp",
+    "index.html": "/Portfolio_Website1/index.html",
+    "main.2b9b0b56.css.map": "/Portfolio_Website1/static/css/main.2b9b0b56.css.map",
+    "main.97123518.js.map": "/Portfolio_Website1/static/js/main.97123518.js.map",
+    "495.82cfc7dd.chunk.js.map": "/Portfolio_Website1/static/js/495.82cfc7dd.chunk.js.map",
+    "453.8ab44547.chunk.js.map": "/Portfolio_Website1/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b9b0b56.css",
+    "static/js/main.97123518.js"
+  ]
+}

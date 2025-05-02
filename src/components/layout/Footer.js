@@ -161,9 +161,6 @@ const Footer = () => {
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: 'smooth' });
       }
-    } else {
-      // If we're not on the home page, navigate to home and then to contact
-      window.location.href = '/#contact';
     }
   };
   
@@ -207,12 +204,7 @@ const Footer = () => {
                 <FooterLink to="/projects">Projects</FooterLink>
               </FooterLinkItem>
               <FooterLinkItem>
-                <FooterLink 
-                  to="/" 
-                  onClick={handleContactClick}
-                >
-                  Contact
-                </FooterLink>
+                <FooterLink to="/">Contact</FooterLink>
               </FooterLinkItem>
             </FooterLinksList>
           </nav>

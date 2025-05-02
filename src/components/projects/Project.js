@@ -72,6 +72,12 @@ const ProjectImage = styled.img`
   margin-bottom: 15px;
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+`;
+
 const GithubLink = styled.a`
   display: inline-block;
   background-color: ${props => props.theme.colors.orchid};
@@ -87,6 +93,17 @@ const GithubLink = styled.a`
   &:hover {
     background-color: transparent;
     color: ${props => props.theme.colors.orchid};
+  }
+`;
+
+const WebsiteLink = styled(GithubLink)`
+  background-color: ${props => props.theme.colors.lavender};
+  border: 2px solid ${props => props.theme.colors.lavender};
+  color: ${props => props.theme.colors.black};
+  
+  &:hover {
+    background-color: transparent;
+    color: ${props => props.theme.colors.black};
   }
 `;
 
@@ -125,14 +142,27 @@ const Project = ({ project }) => {
         ))}
       </TechnologiesList>
       
-      <GithubLink 
-        href={project.github_url} 
-        target="_blank" 
-        rel="noopener noreferrer"
-        aria-label={`View ${project.name} on GitHub`}
-      >
-        View on GitHub
-      </GithubLink>
+      <ButtonContainer>
+        <GithubLink 
+          href={project.github_url} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label={`View ${project.name} on GitHub`}
+        >
+          View on GitHub
+        </GithubLink>
+        
+        {project.live_url && (
+          <WebsiteLink 
+            href={project.live_url} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label={`Visit ${project.name} website`}
+          >
+            Visit Website
+          </WebsiteLink>
+        )}
+      </ButtonContainer>
     </ProjectCard>
   );
 };
@@ -145,7 +175,8 @@ Project.propTypes = {
     technologies: PropTypes.string,
     technologies_list: PropTypes.arrayOf(PropTypes.string),
     github_url: PropTypes.string.isRequired,
-    image: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+    image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+    live_url: PropTypes.string
   }).isRequired
 };
 
